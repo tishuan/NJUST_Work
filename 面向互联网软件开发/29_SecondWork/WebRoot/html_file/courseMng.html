@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SecondWork_29</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <style type="text/css">
+  	  #couMng{
+  	  	text-align: center;
+  	  	font-size:15px;
+  	  }
+  	  a{
+  	 	display: inline-block;
+        margin-right: 20px; /* 设置右边距 */
+  	  	text-align: center;	  	
+  	  }
+  	  #table1{
+  	  	width:500px;
+  	  	height:300px;
+  	  	border: 1px solid black;
+  	  	border-bottom: 1px solid black;
+  	  	border-collapse: collapse;
+  	  	text-align:center;
+  	  	margin:auto;
+  	  }
+  	  table{
+		border-right:1px solid black;		
+		border-bottom:1px solid black;		
+	  }		
+	  td,th{		
+		border-left:1px solid black;		
+		border-top:1px solid black;		
+	  }
+  </style>
+  <body>
+    <div id="couMng">
+    	<br>
+    	<pre>学号：  <u>922106840205</u>  姓名： <u>谭欢</u></pre>
+    	<br>
+    	
+    	<table id="table1">
+    		<tr>
+    			<th>是否选择</th>
+    			<th>序号</th>
+    			<th>课程名称</th>
+    			<th>分数</th>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" id="info1" name="info1"><label for="info1"></label></td>
+    			<td>1</td>
+    			<td>javaEE</td>
+    			<td>100</td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" id="info2" name="info2"><label for="info2"></label></td>
+    			<td>2</td>
+    			<td>C++</td>
+    			<td>90</td>
+    		</tr>
+    		<tr>
+    			<td><input type="checkbox" id="info3" name="info3"><label for="info3"></label></td>
+    			<td>3</td>
+    			<td>软件课程设计</td>
+    			<td>80</td>
+    		</tr>   		
+    	</table>
+    	<br>
+    	<div id="alink">
+    		<a href="http://localhost:8080/29_SecondWork/html_file/page1.html">
+    			<button type="button">退选</button>
+    		</a>
+    		<a href="http://localhost:8080/29_SecondWork/html_file/page2.html">
+    			<button type="button">课程管理</button>
+    		</a>
+    	</div>
+    </div>
+  </body>
+</html>

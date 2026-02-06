@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov 25 19:05:03 2022
+# Process ID: 6100
+# Current directory: C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/CPU/CPU.runs/synth_1
+# Command line: vivado.exe -log single_cycle_cpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu.tcl
+# Log file: C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/CPU/CPU.runs/synth_1/single_cycle_cpu.vds
+# Journal file: C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/CPU/CPU.runs/synth_1\vivado.jou
+# Running On: LAPTOP-69O1FBO9, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 8381 MB
+#-----------------------------------------------------------
+source single_cycle_cpu.tcl -notrace

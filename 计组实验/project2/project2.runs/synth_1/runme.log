@@ -1,0 +1,401 @@
+
+*** Running vivado
+    with args -log regfile_display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source regfile_display.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source regfile_display.tcl -notrace
+Command: synth_design -top regfile_display -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 892 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 746.941 ; gain = 179.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'regfile_display' [D:/project2/project2.srcs/sources_1/new/regfile_display.v:22]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/project2/project2.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (1#1) [D:/project2/project2.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_module' [D:/project2/project2.runs/synth_1/.Xil/Vivado-1040-stu-4/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_module' (2#1) [D:/project2/project2.runs/synth_1/.Xil/Vivado-1040-stu-4/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'regfile_display' (3#1) [D:/project2/project2.srcs/sources_1/new/regfile_display.v:22]
+WARNING: [Synth 8-3331] design regfile has unconnected port raddr1[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port raddr2[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port waddr[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[31]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[30]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[29]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[28]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[27]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[26]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[25]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[24]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[23]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[22]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[21]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[20]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[19]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[18]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[17]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[16]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[15]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[14]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[13]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[12]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port wdata[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port test_addr[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 803.887 ; gain = 236.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 807.996 ; gain = 240.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 807.996 ; gain = 240.660
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/project2/project2.srcs/constrs_1/new/regfile.xdc]
+Finished Parsing XDC File [D:/project2/project2.srcs/constrs_1/new/regfile.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/project2/project2.srcs/constrs_1/new/regfile.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/regfile_display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/regfile_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 928.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 928.816 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "display_name" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   7 Input     39 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module regfile_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 1     
+	   7 Input     39 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'raddr2_reg_rep[0]__0' (FDRE) to 'raddr2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'raddr2_reg_rep[1]' (FDRE) to 'raddr2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'raddr2_reg_rep[2]' (FDRE) to 'raddr2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'raddr2_reg_rep[3]' (FDRE) to 'raddr2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'raddr1_reg_rep[0]' (FDRE) to 'raddr1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'raddr1_reg_rep[1]' (FDRE) to 'raddr1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'raddr1_reg_rep[2]' (FDRE) to 'raddr1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'raddr1_reg_rep[3]' (FDRE) to 'raddr1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[6]' (FDR) to 'display_name_reg[32]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[7]' (FDR) to 'display_name_reg[9]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[9]' (FDR) to 'display_name_reg[11]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[10]' (FDR) to 'display_name_reg[14]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[11]' (FDR) to 'display_name_reg[15]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[12]' (FDS) to 'display_name_reg[16]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[13]' (FDS) to 'display_name_reg[17]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[15]' (FDR) to 'display_name_reg[19]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[16]' (FDS) to 'display_name_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[18]' (FDS) to 'display_name_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[19]' (FDR) to 'display_name_reg[20]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[20]' (FDR) to 'display_name_reg[21]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[21]' (FDR) to 'display_name_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[22]' (FDS) to 'display_name_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[23]' (FDR) to 'display_name_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[25]' (FDR) to 'display_name_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[27]' (FDR) to 'display_name_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[28]' (FDR) to 'display_name_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[29]' (FDR) to 'display_name_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[30]' (FDS) to 'display_name_reg[33]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[31]' (FDR) to 'display_name_reg[35]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[32]' (FDR) to 'display_name_reg[34]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[33]' (FDS) to 'display_name_reg[36]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[35]' (FDR) to 'display_name_reg[37]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[36]' (FDS) to 'display_name_reg[38]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[37]' (FDR) to 'display_name_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_name_reg[39] )
+INFO: [Synth 8-3886] merging instance 'display_name_reg[3]' (FD) to 'display_name_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_name_reg[8] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+-------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++----------------+-------------------------+-----------+----------------------+--------------+
+|regfile_display | rf_module/REG_Files_reg | Implied   | 16 x 9               | RAM32M x 6   | 
++----------------+-------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++----------------+-------------------------+-----------+----------------------+--------------+
+|Module Name     | RTL Object              | Inference | Size (Depth x Width) | Primitives   | 
++----------------+-------------------------+-----------+----------------------+--------------+
+|regfile_display | rf_module/REG_Files_reg | Implied   | 16 x 9               | RAM32M x 6   | 
++----------------+-------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'display_name_reg[38]' (FDS) to 'display_valid_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 928.816 ; gain = 361.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |lcd_module    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |lcd_module |     1|
+|2     |BUFG       |     1|
+|3     |LUT1       |     2|
+|4     |LUT2       |     5|
+|5     |LUT3       |     6|
+|6     |LUT4       |     1|
+|7     |LUT5       |    33|
+|8     |LUT6       |    23|
+|9     |RAM32M     |     6|
+|10    |FDRE       |    84|
+|11    |FDSE       |     6|
+|12    |IBUF       |     5|
+|13    |OBUF       |    13|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |   232|
+|2     |  rf_module |regfile |    33|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 931.758 ; gain = 243.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 931.758 ; gain = 364.422
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 955.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 955.910 ; gain = 652.813
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 955.910 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/project2/project2.runs/synth_1/regfile_display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file regfile_display_utilization_synth.rpt -pb regfile_display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 17:02:30 2024...

@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="head">
+        <div class="quit" onclick="quit">
+            <image class="quit-img" src='/common/back.png'></image>
+            <text class="quit-text">退出</text>
+        </div>
+        <div class = "mode-section">
+            <input class='radio' type="radio" name="mode" checked="true" value="TCP" on:click="modeSelect('TCP')"></input>
+            <text class="radio-text">TCP</text>
+            <input class="radio" type="radio" name="mode" value="RTU" on:click="modeSelect('RTU')"></input>
+            <text class="radio-text">RTU</text>
+        </div>
+    </div>
+    <div class="button-grid">
+        <picker-view class="joint-select" type="text" range="{{joints}}" selected="0" @change="onJointChange"></picker-view>
+        <div class="column">
+            <input type="button" class="action-btn" value="正向转1°" onclick="rotate('forward', 1)"></input>
+            <input type="button" class="action-btn" value="正向转2°" onclick="rotate('forward', 2)"></input>
+            <input type="button" class="action-btn" value="正向转3°" onclick="rotate('forward', 3)"></input>
+            <input type="button" class="action-btn" value="正向转5°" onclick="rotate('forward', 5)"></input>
+        </div>
+        <div class="column">
+            <input type="button" class="action-btn" value="反向转1°" onclick="rotate('backward', 1)"></input>
+            <input type="button" class="action-btn" value="反向转2°" onclick="rotate('backward', 2)"></input>
+            <input type="button" class="action-btn" value="反向转3°" onclick="rotate('backward', 3)"></input>
+            <input type="button" class="action-btn" value="反向转5°" onclick="rotate('backward', 5)"></input>
+        </div>
+    </div>
+
+    <div class="conveyor-section">
+        <input type="button"
+               class="action-btn"
+               value="{{conveyor ? '停止传送带' : '启动传送带'}}"
+               onclick="toggleConveyor()"/>
+        <input type="button" class="action-btn" value="复位" onclick="reset()"></input>
+        <input type="button"
+               class="action-btn"
+               value="自动控制"
+               onclick="autoControl()"/>
+        <text style="font-size: 25fp; color: red; margin: 3px 0 5px 10px ; height: 48px;">
+            红箱子数量：{{ redCount }}
+        </text>
+        <text style="font-size: 25fp; color: black; margin: 3px 0 5px 10px ; height: 48px;">
+            搬运次数：{{ totalCount }}
+        </text>
+    </div>
+    <div class="conveyor-section">
+        <text style="font-size: 25fp; margin: 10px 0 0 30px ;color: black; height: 48px;">设置搬运次数</text>
+        <picker-view type="text"
+                     range="{{ countList }}"
+                     selected="{{ selectedIndex }}"
+                     @change="onCountChange"
+                     class="move-select">
+        </picker-view>
+        <input type="button"
+               class="set-btn"
+               value="确定"
+               onclick="setMoveCount()"/>
+        <input type="button"
+               class="action-btn"
+               value="急停"
+               onclick="Estop()"/>
+        <input type="button"
+               class="action-btn"
+               value="软复位"
+               onclick="softReset()"/>
+    </div>
+</div>

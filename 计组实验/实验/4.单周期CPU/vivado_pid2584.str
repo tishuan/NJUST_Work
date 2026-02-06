@@ -1,0 +1,426 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 2584
+License: Customer
+
+Current time: 	Wed Dec 04 13:44:52 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	E:/Xilinx2019/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	E:/Xilinx2019/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: F:/计组实验/实验/4.单周期CPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx2019/Vivado
+HDI_APPROOT: E:/Xilinx2019/Vivado/2019.1
+RDI_DATADIR: E:/Xilinx2019/Vivado/2019.1/data
+RDI_BINDIR: E:/Xilinx2019/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	E:/Xilinx2019/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	F:/计组实验/实验/4.单周期CPU/vivado.log
+Vivado journal file location: 	F:/计组实验/实验/4.单周期CPU/vivado.jou
+Engine tmp dir: 	F:/计组实验/实验/4.单周期CPU/.Xil/Vivado-2584-stu-4
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx2019/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx2019/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Xilinx2019/Vivado/2019.1
+XILINX_SDK: E:/Xilinx2019/SDK/2019.1
+XILINX_VIVADO: E:/Xilinx2019/Vivado/2019.1
+XILINX_VIVADO_HLS: E:/Xilinx2019/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 572 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Checkpoint : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_checkpoint F:/计组实验/实验/4.单周期CPU/lcd_module.dcp 
+// Tcl Message: Command: open_checkpoint F:/计组实验/实验/4.单周期CPU/lcd_module.dcp  Starting open_checkpoint Task  Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 631.563 ; gain = 0.000 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 51 MB. Current time: 12/4/24, 1:44:54 PM CST
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+92033kb) [00:00:27]
+// [Engine Memory]: 639 MB (+518105kb) [00:00:27]
+// [GUI Memory]: 102 MB (+7304kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  2135 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2019/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 873 MB. GUI used memory: 51 MB. Current time: 12/4/24, 1:45:09 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,026 MB. GUI used memory: 50 MB. Current time: 12/4/24, 1:45:19 PM CST
+// [Engine Memory]: 1,026 MB (+372555kb) [00:00:44]
+// [Engine Memory]: 1,098 MB (+22197kb) [00:00:44]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,174 MB (+22099kb) [00:00:45]
+// Xgd.load filename: E:/Xilinx2019/Vivado/2019.1/data/parts/xilinx/artix7/devint/artix7/xc7a200t/xc7a200t.xgd; ZipEntry: xc7a200t_detail.xgd elapsed time: 0.7s
+// [GUI Memory]: 129 MB (+22884kb) [00:00:46]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2181 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tfbg676-2 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2015.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1070.289 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 2 instances  
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Device view-level: 0.0
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with  build 1266856 
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1201.723 ; gain = 592.613 
+// Project name: project_lcd_module; location: F:/计组实验/实验/4.单周期CPU; part: xc7a200tfbg676-2
+dismissDialog("Open Checkpoint"); // by (cl)
+// [GUI Memory]: 139 MB (+4491kb) [00:00:52]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+// [Engine Memory]: 1,501 MB (+280815kb) [00:00:57]
+// PAResourceOtoP.PAViews_DEVICE: Device: close view
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+// RouteApi::initDelayMediator elapsed time: 9.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,577 MB (+1075kb) [00:00:58]
+// PAResourceOtoP.PAViews_NETLIST: Netlist: close view
+selectButton(PAResourceItoN.MainToolbarMgr_OPEN, (String) null); // aA (f, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainToolbarMgr_OPEN_RECENT_FILE, "Open Recent File"); // ae (cl)
+selectButton(RDIResource.TclConsoleView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u (f, cl): TRUE
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenuItem(RDIResource.MainWinMenuMgr_LOAD, "I/O Planning"); // ah (cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 147 MB (+451kb) [00:01:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,622 MB. GUI used memory: 109 MB. Current time: 12/4/24, 1:45:54 PM CST
+selectTab((HResource) null, (HResource) null, "Netlist", 0); // aK (aH, cl)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[lcd_module, Nets (397)]", 1, false); // bd (O, cl)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[lcd_module, Nets (397)]", 1, false, false, false, false, false, true); // bd (O, cl) - Double Click
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[lcd_module, Nets (397)]", 1, true); // bd (O, cl) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[lcd_module, Nets (397)]", 1, false, false, false, false, false, true); // bd (O, cl) - Double Click
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // Z (q, cl)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // Z (q, cl)
+selectTab((HResource) null, (HResource) null, "Package Pins", 2); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Clock Regions", 1); // aK (aH, cl)
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_COPY, "edit_copy"); // B (f, cl)
+// Run Command: RDIResourceCommand.RDICommands_COPY
+selectButton(PAResourceCommand.PACommandNames_SCHEMATIC, "run_schematic"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,645 MB. GUI used memory: 88 MB. Current time: 12/4/24, 1:46:49 PM CST
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (f, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// D (cl): Settings: addNotify
+// 'dz' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  3101 ms.
+dismissDialog("Settings"); // D (cl)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Default Layout", 0); // bg (f, cl)
+// [Engine Memory]: 1,660 MB (+4266kb) [00:02:24]
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "I/O Planning", 1); // bg (f, cl)
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Floorplanning", 2); // bg (f, cl)
+// [GUI Memory]: 156 MB (+2271kb) [00:02:33]
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,670 MB. GUI used memory: 100 MB. Current time: 12/4/24, 1:47:09 PM CST
+selectTab((HResource) null, (HResource) null, "Physical Constraints", 0); // aK (aH, cl)
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module]", 0, true); // i (O, cl) - Node
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module]", 0, true, false, false, false, false, true); // i (O, cl) - Double Click - Node
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module]", 0, true); // i (O, cl) - Node
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module]", 0, true, false, false, false, false, true); // i (O, cl) - Double Click - Node
+// PAPropertyPanels.initPanels (ROOT) elapsed time: 0.2s
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module, ROOT]", 1, false); // i (O, cl)
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module, ROOT]", 1, false, false, false, false, false, true); // i (O, cl) - Double Click
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module, ROOT]", 1, false); // i (O, cl)
+selectTree(PAResourceOtoP.PhysicalHierarchyView_PHYSICAL_HIERARCHY_VIEW_TREE, "[checkpoint_lcd_module, ROOT]", 1, false, false, false, false, false, true); // i (O, cl) - Double Click
+// Elapsed time: 19 seconds
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Debug", 3); // bg (f, cl)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "ECO", 5); // bg (f, cl)
+// Device: addNotify
+// DeviceView Instantiated
+// Package: addNotify
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Default Layout", 0); // bg (f, cl)
+selectComboBox(RDIResource.MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT, "Timing Analysis", 4); // bg (f, cl)
+// Device: addNotify
+// DeviceView Instantiated
+// Device view-level: 0.0
+selectTab((HResource) null, (HResource) null, "Pblock Properties", 1); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Netlist", 0); // aK (aH, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+selectButton(PAResourceItoN.MainToolbarMgr_OPEN, (String) null); // aA (f, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ae (cl)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ae (cl)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  2126 ms.
+// Tcl Message: open_hw 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,694 MB. GUI used memory: 112 MB. Current time: 12/4/24, 1:48:21 PM CST
+// 'Q' command handler elapsed time: 3 seconds
+dismissDialog("Open Hardware Manager"); // by (cl)
+// Elapsed time: 68 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cl)
+// [GUI Memory]: 166 MB (+2284kb) [00:04:59]
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+closeMainWindow("lcd_module.dcp - [F:/计组实验/实验/4.单周期CPU/lcd_module.dcp] - Vivado 2019.1"); // cl
+// HMemoryUtils.trashcanNow. Engine heap size: 1,708 MB. GUI used memory: 104 MB. Current time: 12/4/24, 1:49:41 PM CST
+closeMainWindow("lcd_module.dcp - [F:/计组实验/实验/4.单周期CPU/lcd_module.dcp] - Vivado 2019.1"); // cl
+// A (cl): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_DESIGN, "Close Hardware Manager"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_DESIGN
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_SESSION_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,708 MB. GUI used memory: 95 MB. Current time: 12/4/24, 1:50:01 PM CST
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.

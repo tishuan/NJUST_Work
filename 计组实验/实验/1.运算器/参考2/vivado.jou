@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  2 09:22:52 2022
+# Process ID: 4068
+# Current directory: C:/Users/lenovo/Desktop/lym
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1048 C:\Users\lenovo\Desktop\lym\exp_1.xpr
+# Log file: C:/Users/lenovo/Desktop/lym/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/lym\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lenovo/Desktop/lym/exp_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/lenovo/组原/组原实验/adder_display.v] -no_script -reset -force -quiet
+remove_files  C:/Users/lenovo/组原/组原实验/adder_display.v
+export_ip_user_files -of_objects  [get_files F:/wangsong/组原实验1/lcd_module.dcp] -no_script -reset -force -quiet
+remove_files  F:/wangsong/组原实验1/lcd_module.dcp

@@ -1,0 +1,66 @@
+
+*** Running vivado
+    with args -log single_cycle_cpu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source single_cycle_cpu.tcl -notrace
+Command: synth_design -top single_cycle_cpu -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15712
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [G:/Downloads/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-6901] identifier 'rs_value' is used before its declaration [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v:115]
+WARNING: [Synth 8-6901] identifier 'rt_value' is used before its declaration [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v:115]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 834.332 ; gain = 414.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/inst_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/inst_rom.v:5]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/data_ram.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/data_ram.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu' (0#1) [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v:9]
+WARNING: [Synth 8-6014] Unused sequential element rf_reg[0] was removed.  [C:/Users/HP/Desktop/组原实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v:30]
+WARNING: [Synth 8-7129] Port mem_addr[31] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[30] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[29] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[28] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[27] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[26] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[25] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[24] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[23] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[22] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[21] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[20] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[19] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[18] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[17] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[16] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[15] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[14] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[13] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[12] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[11] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[10] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[9] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[8] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[7] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[1] in module single_cycle_cpu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_addr[0] in module single_cycle_cpu is either unconnected or has no load
+TclStackFree: incorrect freePtr. Call out of sequence?

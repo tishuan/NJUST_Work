@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/HP/Desktop/adder.v,1668587236,verilog,,C:/Users/HP/Desktop/alu.v,,adder,,,,,,,,
+C:/Users/HP/Desktop/alu.v,1668587254,verilog,,C:/Users/HP/Desktop/data_ram.v,,alu,,,,,,,,
+C:/Users/HP/Desktop/data_ram.v,1668587270,verilog,,C:/Users/HP/Desktop/inst_rom.v,,data_ram,,,,,,,,
+C:/Users/HP/Desktop/inst_rom.v,1669366878,verilog,,C:/Users/HP/Desktop/regfile.v,,inst_rom,,,,,,,,
+C:/Users/HP/Desktop/regfile.v,1668587286,verilog,,C:/Users/HP/Desktop/single_cycle_cpu.v,,regfile,,,,,,,,
+C:/Users/HP/Desktop/single_cycle_cpu.v,1668587302,verilog,,C:/Users/HP/Desktop/tb.v,,single_cycle_cpu,,,,,,,,
+C:/Users/HP/Desktop/tb.v,1669366872,verilog,,,,tb,,,,,,,,
+C:/Users/HP/Desktop/xun/xun.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov  3 16:21:58 2024
+# Process ID: 10716
+# Current directory: F:/计组实验/finish/alu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36776 F:\计组实验\finish\alu\alu.xpr
+# Log file: F:/计组实验/finish/alu/vivado.log
+# Journal file: F:/计组实验/finish/alu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only F:/计组实验/finish/alu/alu.xpr
+INFO: [Project 1-313] Project file moved from 'D:/alu' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/计组实验/finish/project1/project1.srcs/sources_1/new/adder.v', nor could it be found using path 'D:/project1/project1.srcs/sources_1/new/adder.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/计组实验/finish/project1/project1.srcs/sources_1/new/adder_display.v', nor could it be found using path 'D:/project1/project1.srcs/sources_1/new/adder_display.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'alu.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1134.715 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 16:23:54 2024...

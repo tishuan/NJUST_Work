@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/project_4/pro4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/adder.v,1637136761,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/alu.v,,adder,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/alu.v,1637136825,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/data_ram.v,,alu,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/data_ram.v,1637136854,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/inst_rom.v,,data_ram,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/inst_rom.v,1637633488,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/regfile.v,,inst_rom,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/regfile.v,1637136906,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/single_cycle_cpu.v,,regfile,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/single_cycle_cpu.v,1637136930,verilog,,E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/tb.v,,single_cycle_cpu,,,,,,,,
+E:/project_4/pro4.srcs/sources_1/imports/single_cycle_cpu/tb.v,1637631537,verilog,,,,tb,,,,,,,,

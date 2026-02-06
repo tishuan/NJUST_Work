@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx2019/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 947c2015b7d048569dbb4bd9131e04cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <shower> not found while processing module instance <adder_display> [F:/projects/project_1/project_1.srcs/sources_1/new/test1.v:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 26 09:38:01 2021
+# Process ID: 3364
+# Current directory: E:/pro2/project_1.runs/synth_1
+# Command line: vivado.exe -log alu_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_display.tcl
+# Log file: E:/pro2/project_1.runs/synth_1/alu_display.vds
+# Journal file: E:/pro2/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source alu_display.tcl -notrace

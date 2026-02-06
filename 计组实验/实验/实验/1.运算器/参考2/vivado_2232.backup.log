@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  1 19:44:33 2022
+# Process ID: 2232
+# Current directory: F:/lym
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2184 F:\lym\exp_1.xpr
+# Log file: F:/lym/vivado.log
+# Journal file: F:/lym\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/lym/exp_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/lenovo/Desktop/001' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/../组原/组原实验/lcd_module.dcp', nor could it be found using path 'C:/Users/lenovo/组原/组原实验/lcd_module.dcp'.
+WARNING: [Project 1-865] Could not find the file F:/../组原/组原实验/lcd_module.dcp
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/../组原/组原实验/adder_display.v', nor could it be found using path 'C:/Users/lenovo/组原/组原实验/adder_display.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file F:/../组原/组原实验/lcd_module.dcp
+WARNING: [Project 1-865] Could not find the file F:/../组原/组原实验/lcd_module.dcp
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2019/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  1 19:45:52 2022...

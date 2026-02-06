@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 30 22:50:36 2024
+# Process ID: 14680
+# Current directory: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6416 E:\ä¯ÀÀÆ÷ÏÂÔØ\aaa\projects\project_1\project_1.xpr
+# Log file: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/vivado.log
+# Journal file: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

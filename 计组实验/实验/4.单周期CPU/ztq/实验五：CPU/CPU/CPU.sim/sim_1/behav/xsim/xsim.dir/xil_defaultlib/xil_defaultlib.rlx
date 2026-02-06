@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lenovo/Desktop/CPU/CPU.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/adder.v,1668587236,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/alu.v,,adder,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/alu.v,1668587254,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/data_ram.v,,alu,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/data_ram.v,1668587270,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/inst_rom.v,,data_ram,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/inst_rom.v,1669366223,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/regfile.v,,inst_rom,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/regfile.v,1668587286,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/single_cycle_cpu.v,,regfile,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/single_cycle_cpu.v,1668587302,verilog,,C:/Users/lenovo/Desktop/single_cycle_cpu/tb.v,,single_cycle_cpu,,,,,,,,
+C:/Users/lenovo/Desktop/single_cycle_cpu/tb.v,1669365829,verilog,,,,tb,,,,,,,,

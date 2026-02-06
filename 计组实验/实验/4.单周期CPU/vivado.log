@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  4 13:44:12 2024
+# Process ID: 2584
+# Current directory: F:/计组实验/实验/4.单周期CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2128 F:\计组实验\实验\4.单周期CPU\lcd_module.dcp
+# Log file: F:/计组实验/实验/4.单周期CPU/vivado.log
+# Journal file: F:/计组实验/实验/4.单周期CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint F:/计组实验/实验/4.单周期CPU/lcd_module.dcp
+Command: open_checkpoint F:/计组实验/实验/4.单周期CPU/lcd_module.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 631.563 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2019/Vivado/2019.1/data/ip'.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1070.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with  build 1266856
+open_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1201.723 ; gain = 592.613
+open_hw
+close_hw

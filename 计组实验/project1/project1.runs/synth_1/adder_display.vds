@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 30 22:26:38 2024
+# Process ID: 15312
+# Current directory: D:/vivado/project1/project1.runs/synth_1
+# Command line: vivado.exe -log adder_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_display.tcl
+# Log file: D:/vivado/project1/project1.runs/synth_1/adder_display.vds
+# Journal file: D:/vivado/project1/project1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adder_display.tcl -notrace
+Command: synth_design -top adder_display -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12732
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1137.203 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'adder_display' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:55]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (1#1) [D:/vivado/project1/project1.srcs/sources_1/new/adder.v:23]
+ERROR: [Synth 8-448] named port connection 'operand1' does not exist for instance 'adder_module' of module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:56]
+ERROR: [Synth 8-448] named port connection 'operand2' does not exist for instance 'adder_module' of module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:57]
+ERROR: [Synth 8-448] named port connection 'cin' does not exist for instance 'adder_module' of module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:58]
+ERROR: [Synth 8-448] named port connection 'result' does not exist for instance 'adder_module' of module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:59]
+ERROR: [Synth 8-448] named port connection 'cout' does not exist for instance 'adder_module' of module 'adder' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:60]
+INFO: [Synth 8-6157] synthesizing module 'lcd_module' [D:/vivado/project1/project1.runs/synth_1/.Xil/Vivado-15312-tishuan/realtime/lcd_module_stub.v:6]
+ERROR: [Synth 8-6156] failed synthesizing module 'lcd_module' [D:/vivado/project1/project1.runs/synth_1/.Xil/Vivado-15312-tishuan/realtime/lcd_module_stub.v:6]
+ERROR: [Synth 8-6156] failed synthesizing module 'adder_display' [D:/vivado/project1/project1.srcs/sources_1/new/adder_display.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1137.203 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 1 Warnings, 0 Critical Warnings and 8 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 22:27:08 2024...

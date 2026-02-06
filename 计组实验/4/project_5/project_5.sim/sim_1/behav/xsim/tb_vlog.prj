@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/adder.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/alu.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/data_ram.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/inst_rom.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v" \
+"C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

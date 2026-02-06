@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.head{
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.quit{
+    flex-direction: row;
+    width: 20%;
+    height: 30%;
+    align-items: center;
+}
+.quit-img{
+    width: 30%;
+    height: 30%;
+}
+.quit-text{
+    font-size: 25fp;
+    text-align: left;
+    color: black;
+}
+.mode-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+}
+.radio{
+    width: 50px;
+    height: 50px;
+    selected-color: black;
+    selected-font-size: 25fp;
+    font-size: 25fp;
+    color: black;
+    border-color: black;
+}
+.radio-text{
+    font-size: 25fp;
+    color: black;
+    padding-right: 40px;
+}
+.button-grid {
+    flex-direction: row;
+    width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+}
+.joint-select {
+    width: 20%;
+    height: 20%;
+    font-size: 25fp;
+    margin-left: 10px;
+    color: grey;
+    selected-color: black;
+}.column {
+    flex-direction: column;
+    margin: 0 20px;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    left: 10fp;
+}
+.action-btn {
+    width: 140px;
+    height: 45px;
+    font-size: 25fp;
+    margin: 0px 0 5px 10px ;
+}
+.conveyor-section {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    font-size: 25fp;
+}
+.conveyor-section input {
+    height: 40px;
+    font-size: 25fp;
+}
+.move-select {
+    width: 20%;
+    height: 50px;
+    font-size: 25fp;
+    color: grey;
+    selected-color: black;
+}
+.set-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 25fp;
+    margin: 5px 0 0 0 ;
+}

@@ -1,0 +1,93 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+
+// Design Name:   single_cycle_cpu
+// Module Name:   F:/new_lab/6_single_cycle_cpu/tb.v
+// Project Name:  single_cycle_cpu
+//
+// Verilog Test Fixture created by ISE for module: single_cycle_cpu
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module tb;
+
+    // Inputs
+    reg clk;
+    reg resetn;
+    reg [4:0] rf_addr;
+    reg [31:0] mem_addr;
+
+    // Outputs
+    wire [31:0] rf_data;
+    wire [31:0] mem_data;
+    wire [31:0] cpu_pc;
+    wire [31:0] cpu_inst;
+
+    // Instantiate the Unit Under Test (UUT)
+    single_cycle_cpu uut (
+        .clk(clk), 
+        .resetn(resetn), 
+        .rf_addr(rf_addr), 
+        .mem_addr(mem_addr), 
+        .rf_data(rf_data), 
+        .mem_data(mem_data), 
+        .cpu_pc(cpu_pc), 
+        .cpu_inst(cpu_inst)
+    );
+
+    initial begin
+        // Initialize Inputs
+        clk = 0;
+        resetn = 0;
+        rf_addr = 0;
+        mem_addr = 0;
+
+        // Wait 100 ns for global reset to finish
+        #100;
+      resetn = 1;
+        // Add stimulus here
+    end
+    always #5 clk=~clk;
+    always@( posedge clk) 
+    begin
+        if((cpu_pc==0)&  rf_addr==0)
+            rf_addr=1;
+        
+        if(cpu_pc==32'h00000004)    // sll  $2 ,$1,#1
+		  begin
+				rf_addr=2;
+			end
+		
+		if(cpu_pc==32'h00000008)    // addu  $3 ,$2,$1 
+		  begin
+				rf_addr=3;	
+			end
+			
+		if(cpu_pc==32'h0000000C)    // subu  $4 ,$2,$1
+		  begin
+				rf_addr=4;	
+			end
+			
+		if(cpu_pc==32'h00000010)    // beq  $4 ,$1,#3
+		  begin
+				rf_addr=5;	
+			end
+			
+		if(cpu_pc==32'h00000014)    // xor  $5 ,$2,$1
+		  begin
+				rf_addr=6;	
+			end
+			
+		
+			
+    end
+endmodule
+
+

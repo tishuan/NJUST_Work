@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 30 22:50:36 2024
+# Process ID: 14680
+# Current directory: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6416 E:\ä¯ÀÀÆ÷ÏÂÔØ\aaa\projects\project_1\project_1.xpr
+# Log file: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/vivado.log
+# Journal file: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'F:/projects/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'project_1.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1467.410 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/project_1.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Wed Oct 30 22:52:19 2024] Launched synth_1...
+Run output will be captured here: E:/ä¯ÀÀÆ÷ÏÂÔØ/aaa/projects/project_1/project_1.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 00:09:48 2024...

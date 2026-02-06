@@ -1,0 +1,168 @@
+//*************************************************************************
+//   > 文件名: adder_display.v
+//   > 描述  ：加法器显示模块，调用FPGA板上的IO接口和触摸屏
+//*************************************************************************
+module register_display(
+    //时钟与复位信号
+    input clk,
+    input resetn,    //后缀"n"代表低电平有效
+
+
+    //拨码开关，用于选择输入数
+    input write,    // 0: 读
+                    // 1: 写
+    input [1:0] input_sel, // 00 for w addr 
+                           // 01 for w value
+                           // 10 for r addr
+    //触摸屏相关接口，不需要更改
+    output lcd_rst,
+    output lcd_cs,
+    output lcd_rs,
+    output lcd_wr,
+    output lcd_rd,
+    inout[15:0] lcd_data_io,
+    output lcd_bl_ctr,
+    inout ct_int,
+    inout ct_sda,
+    output ct_scl,
+    output ct_rstn
+);
+
+//-----{调用ALU模块}begin
+    reg   [31:0] datain;
+    reg   [7:0] r_addr;
+    reg   [7:0] w_addr;
+    wire  [31:0] dataout;   
+
+    RAM ram_module(
+        .clk      (clk), 
+        .write      (write), // 直接使用输入的 alu_control 信号
+        .r_addr       (r_addr ),
+        .w_addr       (w_addr ),
+        .datain   (datain),
+        .dataout (dataout)
+    );
+//-----{调用ALU模块}end
+
+//---------------------{调用触摸屏模块}begin--------------------//
+//-----{实例化触摸屏}begin
+//此小节不需要更改
+    reg         display_valid;
+    reg  [39:0] display_name;
+    reg  [31:0] display_value;
+    wire [5 :0] display_number;
+    wire        input_valid;
+    wire [31:0] input_value;
+
+    lcd_module lcd_module(
+        .clk            (clk           ),   //10Mhz
+        .resetn         (resetn        ),
+
+        //调用触摸屏的接口
+        .display_valid  (display_valid ),
+        .display_name   (display_name  ),
+        .display_value  (display_value ),
+        .display_number (display_number),
+        .input_valid    (input_valid   ),
+        .input_value    (input_value   ),
+
+        //lcd触摸屏相关接口，不需要更改
+        .lcd_rst        (lcd_rst       ),
+        .lcd_cs         (lcd_cs        ),
+        .lcd_rs         (lcd_rs        ),
+        .lcd_wr         (lcd_wr        ),
+        .lcd_rd         (lcd_rd        ),
+        .lcd_data_io    (lcd_data_io   ),
+        .lcd_bl_ctr     (lcd_bl_ctr    ),
+        .ct_int         (ct_int        ),
+        .ct_sda         (ct_sda        ),
+        .ct_scl         (ct_scl        ),
+        .ct_rstn        (ct_rstn       )
+    ); 
+//-----{实例化触摸屏}end
+
+//-----{从触摸屏获取输入}begin
+// 根据实际需要输入的数修改此小节，建议对每一个数的输入，编写单独一个 always 块
+    
+    //当 write 为 1 时，写
+    always @(posedge clk)
+    begin
+        if (!resetn)
+        begin
+            datain <= 32'd0;
+        end
+        else if (input_valid && write==1'b1 && input_sel == 2'b00)
+        begin
+            w_addr <= input_value;
+        end
+    end
+    
+    always @(posedge clk)
+    begin
+        if (!resetn)
+        begin
+            datain <= 32'd0;
+        end
+        else if (input_valid && write==1'b1 && input_sel == 2'b01)
+        begin
+            datain <= input_value;
+        end
+    end
+    
+    always @(posedge clk)
+    begin
+        if (!resetn)
+        begin
+            datain <= 32'd0;
+        end
+        else if (input_valid && write==1'b0 && input_sel == 2'b10)
+        begin
+            r_addr <= input_value;
+        end
+    end
+    
+
+//-----{从触摸屏获取输入}end
+
+//-----{输出到触摸屏显示}begin
+//根据需要显示的数修改此小节
+    always @(posedge clk)
+    begin
+        case(display_number)
+            6'd1 :
+            begin
+                display_valid <= 1'b1;
+                display_name  <= "ADDR";
+                display_value <= r_addr;
+            end
+            6'd2 :
+            begin
+                display_valid <= 1'b1;
+                display_name  <= "DATAR";
+                display_value <= dataout;
+            end
+            6'd7 :
+            begin
+                display_valid <= 1'b1;
+                display_name  <= "ADDW";
+                display_value <= w_addr;
+            end
+            6'd8 :
+            begin
+                display_valid <= 1'b1;
+                display_name  <= "DATAW";
+                display_value <= datain;
+            end            
+
+            default :
+            begin
+                display_valid <= 1'b0;
+                display_name  <= 40'd0;
+                display_value <= 32'd0;
+            end
+        endcase
+    end
+//-----{输出到触摸屏显示}end
+//----------------------{调用触摸屏模块}end---------------------//
+endmodule
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Oct 30 22:26:38 2024
+# Process ID: 15312
+# Current directory: D:/vivado/project1/project1.runs/synth_1
+# Command line: vivado.exe -log adder_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_display.tcl
+# Log file: D:/vivado/project1/project1.runs/synth_1/adder_display.vds
+# Journal file: D:/vivado/project1/project1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adder_display.tcl -notrace

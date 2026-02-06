@@ -1,0 +1,7 @@
+FIRST(A) = {h}
+FIRST(B) = {h}
+FIRST(C) = {;, =}
+FIRST(D) = {2, 3}
+FIRST(E) = {2, 3}
+FIRST(F) = {+, -}
+FIRST(G) = {¦Å}

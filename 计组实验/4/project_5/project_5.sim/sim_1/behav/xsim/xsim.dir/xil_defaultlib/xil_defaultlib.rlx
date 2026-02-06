@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/adder.v,1668587236,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/alu.v,,adder,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/alu.v,1668587254,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/data_ram.v,,alu,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/data_ram.v,1668587270,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/inst_rom.v,,data_ram,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/inst_rom.v,1733296226,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v,,inst_rom,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/regfile.v,1668587286,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v,,regfile,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/single_cycle_cpu.v,1668587302,verilog,,C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/tb.v,,single_cycle_cpu,,,,,,,,
+C:/Users/lenovo/Desktop/计组实验四/实验/实验/4.单周期CPU/ztq/实验五：CPU/single_cycle_cpu/tb.v,1669345506,verilog,,,,tb,,,,,,,,
+D:/project_5/project_5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../single_cycle_cpu/adder.v" \
+"../../../../../single_cycle_cpu/alu.v" \
+"../../../../../single_cycle_cpu/data_ram.v" \
+"../../../../../single_cycle_cpu/inst_rom.v" \
+"../../../../../single_cycle_cpu/regfile.v" \
+"../../../../../single_cycle_cpu/single_cycle_cpu.v" \
+"../../../../../single_cycle_cpu/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Apr  3 16:38:34 2024
+# Process ID: 22740
+# Current directory: F:/vivado/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8632 F:\vivado\project_1\project_1.xpr
+# Log file: F:/vivado/project_1/vivado.log
+# Journal file: F:/vivado/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only F:/vivado/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivado/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-229] Project 'project_1.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+save_project_as project_2 F:/vivado/project_2 -force
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1494.047 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'encode8_3_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/vivado/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'encode8_3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/vivado/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj encode8_3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/project_2/project_2.srcs/sources_1/new/encode8_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode8_3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'out' is not allowed [F:/vivado/project_2/project_2.srcs/sources_1/new/encode8_3.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/project_2/project_2.srcs/sim_1/new/encode8_3_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode8_3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado/project_2/project_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/vivado/project_2/project_2.sim/sim_1/behav/xsim'
+"xelab -wto e379f238bbf44b00ac53efa833dc2851 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encode8_3_tb_behav xil_defaultlib.encode8_3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e379f238bbf44b00ac53efa833dc2851 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot encode8_3_tb_behav xil_defaultlib.encode8_3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.encode8_3
+Compiling module xil_defaultlib.encode8_3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot encode8_3_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source F:/vivado/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/encode8_3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr  3 16:51:13 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1494.047 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/vivado/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "encode8_3_tb_behav -key {Behavioral:sim_1:Functional:encode8_3_tb} -tclbatch {encode8_3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source encode8_3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'encode8_3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1494.047 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+[Wed Apr  3 16:51:53 2024] Launched synth_1...
+Run output will be captured here: F:/vivado/project_2/project_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.047 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/vivado/project_2/project_2.srcs/constrs_1/new/encode8_3.xdc]
+Finished Parsing XDC File [F:/vivado/project_2/project_2.srcs/constrs_1/new/encode8_3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1641.000 ; gain = 146.953
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a200tfbg676-2
+Top: encode8_3
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [F:/vivado/project_2/project_2.srcs/sources_1/new/encode8_3.v:27]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2393.203 ; gain = 291.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'encode8_3' [F:/vivado/project_2/project_2.srcs/sources_1/new/encode8_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'encode8_3' (1#1) [F:/vivado/project_2/project_2.srcs/sources_1/new/encode8_3.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.613 ; gain = 324.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2443.469 ; gain = 342.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2443.469 ; gain = 342.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2443.469 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/vivado/project_2/project_2.srcs/constrs_1/new/encode8_3.xdc]
+Finished Parsing XDC File [F:/vivado/project_2/project_2.srcs/constrs_1/new/encode8_3.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2489.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2523.781 ; gain = 422.328
+4 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2523.781 ; gain = 432.988
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  3 17:16:34 2024...

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  2 11:18:44 2022
+# Process ID: 4884
+# Current directory: F:/111111
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2212 F:\111111\exp_1.xpr
+# Log file: F:/111111/vivado.log
+# Journal file: F:/111111\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/111111/exp_1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a200t_0] -mem_dev [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
